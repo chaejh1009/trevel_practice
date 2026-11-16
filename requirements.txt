@@ -1,0 +1,5 @@
+Django>=5.2,<6.1
+channels[daphne]>=4.2,<5
+channels-redis>=4.2,<5
+PyMySQL[rsa]>=1.2.4,<2
+dj-database-url>=2.3,<4

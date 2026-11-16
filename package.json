@@ -1,0 +1,33 @@
+{
+  "name": "china-passport",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "server": ".venv/bin/python server/manage.py runserver 127.0.0.1:8000",
+    "test:server": ".venv/bin/python server/manage.py test world",
+    "test:render": "node scripts/check-render.mjs",
+    "test:movement": "node scripts/check-movement.mjs",
+    "avatar:preview": "node scripts/render-avatar-board.mjs",
+    "test:practice": "node scripts/check-practice.mjs",
+    "test:taxi": "node scripts/check-taxi.mjs && node scripts/check-taxi-lifecycle.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.1.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.2.2"
+  },
+  "overrides": {
+    "postcss": "8.5.26"
+  }
+}

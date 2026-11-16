@@ -1,0 +1,193 @@
+.field-world {
+  width: 100%;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #eef2e5;
+}
+.field-world-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 680px;
+  cursor: crosshair;
+  user-select: none;
+  font-family: inherit;
+}
+.field-scene-art {
+  pointer-events: none;
+}
+.field-player {
+  pointer-events: none;
+}
+.field-player-remote {
+  transition: transform 0.1s linear;
+}
+.field-player-self {
+  transition: none;
+}
+.field-walk-target,
+.field-npc-range {
+  pointer-events: none;
+}
+.field-walk-target {
+  animation: field-target-pulse 1.2s ease-in-out infinite;
+}
+.field-npc {
+  cursor: pointer;
+  outline: none;
+}
+.field-npc:focus-visible .field-npc-focus,
+.field-npc:hover .field-npc-focus {
+  opacity: 1;
+}
+.field-npc-speaker {
+  animation: field-speaker-float 2.4s ease-in-out infinite;
+}
+.field-near-npc .field-interact-card {
+  stroke: #91b27b;
+  fill: #fffef4;
+}
+.field-world-locked .field-world-svg {
+  cursor: default;
+}
+.field-world-locked .field-interact,
+.field-world-locked .field-npc {
+  cursor: default;
+}
+.field-world-locked .field-interact {
+  opacity: 0.65;
+}
+@keyframes field-target-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.55;
+  }
+}
+@keyframes field-speaker-float {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -3px;
+  }
+}
+.field-interact {
+  cursor: pointer;
+  outline: none;
+}
+.field-interact-card {
+  filter: drop-shadow(0 5px 8px #546e4e1a);
+  transition:
+    stroke 0.2s,
+    filter 0.2s;
+}
+.field-interact:hover .field-interact-card,
+.field-interact:focus-visible .field-interact-card {
+  stroke: #82a476;
+  filter: drop-shadow(0 6px 11px #546e4e28);
+}
+.field-interact:focus-visible .field-interact-outline {
+  opacity: 1;
+}
+.field-interact-beacon {
+  animation: field-beacon 2.5s ease-in-out infinite;
+}
+.field-interact-done .field-interact-beacon {
+  animation: none;
+}
+.field-scene-caption {
+  pointer-events: none;
+}
+.field-mobile-interact {
+  display: none;
+}
+@keyframes field-beacon {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+@media (max-width: 760px) {
+  .field-world-svg {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+  }
+  .field-interact {
+    display: none;
+  }
+  .field-world {
+    padding-bottom: 62px;
+  }
+  .field-mobile-interact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 10px;
+    min-height: 50px;
+    padding: 9px 13px;
+    text-align: left;
+    background: #fffdf5;
+    color: #58734e;
+    border: 1px solid #ceddc0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #546e4e0d;
+  }
+  .field-mobile-interact > span:first-child {
+    font-size: 24px;
+  }
+  .field-mobile-interact > span:nth-child(2) {
+    flex: 1;
+  }
+  .field-mobile-interact b {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .field-mobile-interact small {
+    display: block;
+    font-size: 9px;
+    color: #98a28a;
+    margin-top: 4px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .field-npc-speaker,
+  .field-walk-target {
+    animation: none !important;
+    transition: none !important;
+  }
+  .field-world * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+.field-taxi-boarding .field-player-self {
+  animation: taxi-traveller-board 1s ease-in forwards;
+}
+@keyframes taxi-traveller-board {
+  0%,
+  35% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .field-taxi-boarding .field-player-self {
+    animation: none;
+  }
+}

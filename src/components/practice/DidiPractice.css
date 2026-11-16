@@ -1,0 +1,1227 @@
+.didi-app {
+  --didi-orange: #f58843;
+  --didi-ink: #343c39;
+  --didi-muted: #9aa29b;
+  width: 100%;
+  max-width: 390px;
+  margin: 0 auto;
+  background: #fff;
+  color: var(--didi-ink);
+  border: 1px solid #e6e8e1;
+  border-radius: 26px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px #314f3b0d;
+  font-family: inherit;
+  text-align: left;
+  isolation: isolate;
+}
+.didi-app button,
+.didi-app input {
+  font: inherit;
+}
+.didi-statusbar {
+  height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 20px 0;
+  font-size: 10px;
+  font-weight: 700;
+  color: #424b43;
+}
+.didi-statusbar > span:last-child {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.didi-app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px 14px;
+  background: #fff;
+}
+.didi-app-header > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.didi-mark {
+  display: grid;
+  place-items: center;
+  color: white;
+  background: var(--didi-orange);
+  font-size: 20px;
+  font-weight: 800;
+  width: 30px;
+  height: 29px;
+  border-radius: 9px 9px 9px 3px;
+}
+.didi-brand {
+  font-size: 20px;
+  font-weight: 750;
+  letter-spacing: -0.8px;
+}
+.didi-brand small {
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #98a096;
+  margin-left: 5px;
+}
+.didi-practice-tag {
+  background: #fff2e6;
+  border: 1px solid #f7dfc8;
+  color: #c2804b;
+  font-size: 8px;
+  letter-spacing: 0.3px;
+  border-radius: 5px;
+  padding: 4px 6px;
+}
+.didi-back {
+  display: grid;
+  place-items: center;
+  padding: 0;
+  width: 25px;
+  height: 28px;
+  color: #606a61;
+}
+.didi-stage-label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 18px;
+  background: #fafaf6;
+  border-block: 1px solid #f0f1e8;
+}
+.didi-stage-label > span:first-child {
+  font-size: 10px;
+  color: #ec965d;
+  font-weight: 700;
+}
+.didi-stage-label i {
+  font-size: 8px;
+  font-style: normal;
+  color: #c1c6b9;
+  font-weight: 400;
+}
+.didi-stage-label > b {
+  font-size: 10px;
+  font-weight: 500;
+  color: #7c887b;
+}
+.didi-stage-dots {
+  margin-left: auto;
+  display: flex;
+  gap: 3px;
+}
+.didi-stage-dots i {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #dde1d6;
+}
+.didi-stage-dots i.filled {
+  background: #efb285;
+}
+.didi-addresses {
+  padding: 12px 19px 7px;
+  background: #fff;
+}
+.didi-addresses > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 43px;
+}
+.didi-addresses > div:first-child {
+  position: relative;
+}
+.didi-addresses > div:first-child:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 21px;
+  left: 3px;
+  top: 31px;
+  background: #e5e9df;
+}
+.didi-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.didi-dot.origin {
+  background: #55a384;
+  box-shadow: 0 0 0 2px #e3eee1;
+}
+.didi-dot.destination {
+  background: #f49b60;
+  box-shadow: 0 0 0 2px #f9ece0;
+}
+.didi-addresses small {
+  display: block;
+  font-size: 7px;
+  color: #a5ad9e;
+  margin-bottom: 3px;
+}
+.didi-addresses b {
+  font-size: 10px;
+  font-weight: 500;
+  color: #576150;
+  line-height: 1.6;
+}
+.didi-addresses em {
+  font-size: 8px;
+  font-style: normal;
+  color: #9da791;
+}
+.didi-search {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex: 1;
+  border-top: 1px solid #f0f1e8;
+  padding: 11px 0;
+  color: #acb2a3;
+}
+.didi-search input {
+  width: 0;
+  flex: 1;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #5b6854;
+  font-size: 12px;
+  min-width: 0;
+  padding: 3px 0;
+}
+.didi-search input:focus-visible {
+  outline: 2px solid #e6b38b;
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+.didi-search input::placeholder {
+  color: #a4ad99;
+  font-size: 11px;
+}
+.didi-destination-edit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  text-align: left;
+  flex: 1;
+  border-top: 1px solid #f0f1e8;
+  padding: 8px 0;
+  color: #afb7a4;
+}
+.didi-destination-screen {
+  min-height: 421px;
+  padding: 13px 17px 0;
+  border-top: 7px solid #f6f7f1;
+  position: relative;
+}
+.didi-search-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding: 0 2px;
+}
+.didi-search-heading b {
+  font-size: 11px;
+  font-weight: 500;
+  color: #7a8772;
+}
+.didi-search-heading > span {
+  font-size: 8px;
+  color: #b0b8a4;
+}
+.didi-place {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 16px 1px;
+  border-bottom: 1px solid #edf0e5;
+  text-align: left;
+}
+.didi-place-icon {
+  width: 32px;
+  height: 34px;
+  background: #f2f4ed;
+  border: 1px solid #e9ede0;
+  border-radius: 9px;
+  color: #a4b393;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.didi-place > span:nth-child(2) {
+  min-width: 0;
+  flex: 1;
+}
+.didi-place b {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  color: #627354;
+}
+.didi-place > span > span {
+  display: block;
+  font-size: 8px;
+  color: #919e84;
+  margin-top: 4px;
+}
+.didi-place small {
+  display: block;
+  font-size: 8px;
+  color: #b1b9a4;
+  line-height: 1.8;
+  margin-top: 4px;
+}
+.didi-place > svg {
+  color: #bdc5b1;
+}
+.didi-place:hover {
+  background: #fafbf5;
+}
+.didi-search-tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  background: #f7f8ef;
+  border: 1px solid #edf0e2;
+  border-radius: 8px;
+  padding: 11px 9px;
+  margin-top: 20px;
+  color: #a1af8c;
+}
+.didi-search-tip p {
+  font-size: 8px;
+  line-height: 1.9;
+  color: #a2ac92;
+}
+.didi-search-tip b {
+  font-weight: 500;
+  color: #80936d;
+}
+.didi-search-scenery {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 22px 7px 14px;
+  color: #e4e9d9;
+}
+.didi-search-scenery > span:first-child {
+  font-size: 34px;
+  letter-spacing: 3px;
+}
+.didi-search-scenery > span:last-child {
+  font-size: 7px;
+  line-height: 1.8;
+  letter-spacing: 2px;
+  color: #bfc9b0;
+}
+.didi-no-results {
+  min-height: 234px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 14px;
+  color: #c1cbb3;
+}
+.didi-no-results b {
+  font-size: 11px;
+  font-weight: 500;
+  color: #8e9d7d;
+}
+.didi-no-results p {
+  font-size: 9px;
+  color: #a8b497;
+}
+.didi-no-results button {
+  color: #cc976e;
+  font-size: 9px;
+  background: #fbf4e9;
+  border-radius: 5px;
+  padding: 8px 11px;
+}
+.didi-map {
+  height: 206px;
+  position: relative;
+  overflow: hidden;
+  background: #f0f1eb;
+}
+.didi-map > svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.didi-map-tag {
+  position: absolute;
+  right: 8px;
+  bottom: 7px;
+  font-size: 5px;
+  letter-spacing: 1px;
+  color: #a6b0a0;
+  background: #ffffffbb;
+  padding: 3px 5px;
+  border-radius: 3px;
+}
+.didi-map-pickup.selectable {
+  cursor: pointer;
+  outline: none;
+}
+.didi-map-pickup.selectable:focus-visible > circle:first-child {
+  stroke: #d98a57;
+  stroke-width: 2;
+}
+.didi-map-assigned {
+  height: 123px;
+}
+.didi-map-review {
+  height: 153px;
+}
+.didi-bottom-sheet {
+  position: relative;
+  padding: 10px 17px 18px;
+  border-radius: 22px 22px 0 0;
+  background: #fff;
+  margin-top: -11px;
+  box-shadow: 0 -5px 15px #6b79620a;
+}
+.didi-sheet-handle {
+  width: 31px;
+  height: 3px;
+  border-radius: 5px;
+  background: #e6e9df;
+  margin: 0 auto 16px;
+}
+.didi-sheet-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  gap: 8px;
+}
+.didi-sheet-title h3 {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+  color: #56654c;
+  margin: 0;
+}
+.didi-sheet-title p {
+  font-size: 9px;
+  color: #a5b094;
+  margin-top: 7px;
+  line-height: 1.8;
+}
+.didi-sheet-title b {
+  font-weight: 500;
+  color: #8f9f7e;
+}
+.didi-airport-badge {
+  width: 33px;
+  height: 33px;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  background: #f0f4e7;
+  color: #a3b38e;
+  font-size: 12px;
+  font-weight: 600;
+}
+.didi-fare-tag {
+  font-size: 8px;
+  color: #c69a6c;
+  background: #fbf3e7;
+  padding: 5px 7px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+.didi-pickup-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.didi-pickup-options button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid #e8eddf;
+  border-radius: 9px;
+  text-align: left;
+  min-height: 59px;
+  color: #aab99a;
+}
+.didi-pickup-options button.selected {
+  border-color: #e4b58f;
+  background: #fffbf4;
+  color: #d49c72;
+}
+.didi-point-letter {
+  width: 26px;
+  height: 28px;
+  border-radius: 7px;
+  display: grid;
+  place-items: center;
+  background: #f2f5e9;
+  border: 1px solid #e8eedc;
+  font-size: 12px;
+  font-weight: 600;
+  flex-shrink: 0;
+  color: #93a77c;
+}
+.selected .didi-point-letter {
+  background: #fae9d7;
+  border-color: #efd2b6;
+  color: #c18d60;
+}
+.didi-pickup-options b {
+  font-size: 11px;
+  font-weight: 500;
+  color: #7a8c68;
+  display: block;
+}
+.didi-pickup-options small {
+  font-size: 8px;
+  color: #acb79e;
+  display: block;
+  margin-top: 5px;
+  line-height: 1.7;
+}
+.didi-pickup-options svg {
+  margin-left: auto;
+}
+.didi-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  width: 100%;
+  min-height: 44px;
+  padding: 13px 10px;
+  background: #ef914f;
+  color: #fffef5;
+  border: 1px solid #ef914f;
+  border-radius: 9px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+.didi-primary:hover:not(:disabled) {
+  background: #e78343;
+}
+.didi-primary:disabled {
+  background: #f4e4d2;
+  border-color: #f4e4d2;
+  color: #c6b196;
+  opacity: 1;
+  cursor: not-allowed;
+}
+.didi-inline-feedback {
+  font-size: 9px;
+  color: #b38c62;
+  background: #fbf5e7;
+  border-radius: 6px;
+  padding: 9px;
+  margin: 9px 0 13px;
+  line-height: 1.8;
+}
+.didi-car-options,
+.didi-plate-options {
+  border: 0;
+  padding: 0;
+  margin: 0 0 18px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.didi-car-options label,
+.didi-plate-options label {
+  position: relative;
+  cursor: pointer;
+}
+.didi-car-options input,
+.didi-plate-options input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  left: 12px;
+  top: 13px;
+}
+.didi-car-card {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid #e5ebda;
+  border-radius: 10px;
+  padding: 14px 9px;
+  min-height: 77px;
+}
+.didi-car-options input:checked + .didi-car-card {
+  border-color: #e4ad80;
+  background: #fffaf1;
+}
+.didi-car-options input:focus-visible + .didi-car-card,
+.didi-plate-options input:focus-visible + span {
+  outline: 2px solid #d49c6c;
+  outline-offset: 3px;
+}
+.didi-car-art {
+  width: 71px;
+  height: 43px;
+  display: block;
+  flex-shrink: 0;
+}
+.didi-car-art.compact {
+  width: 54px;
+  height: 32px;
+}
+.didi-car-name {
+  min-width: 0;
+}
+.didi-car-name b {
+  font-size: 12px;
+  font-weight: 600;
+  color: #74865f;
+  display: block;
+}
+.didi-car-name small {
+  display: block;
+  font-size: 8px;
+  color: #a6b393;
+  margin-top: 5px;
+  white-space: nowrap;
+}
+.didi-car-price {
+  margin-left: auto;
+  font-size: 19px;
+  color: #a58155;
+  letter-spacing: -0.8px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.didi-car-price small {
+  font-size: 6px;
+  display: block;
+  text-align: right;
+  color: #b9ad94;
+  margin-top: 5px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+.didi-radio-indicator {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #dce5d0;
+  border-radius: 50%;
+  color: transparent;
+  background: #fff;
+}
+.didi-car-options input:checked + span .didi-radio-indicator,
+.didi-plate-options input:checked + span .didi-radio-indicator {
+  color: #fff;
+  background: #e6a068;
+  border-color: #e6a068;
+}
+.didi-request-summary {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 11px 4px 17px;
+  border-bottom: 1px solid #edf0e2;
+}
+.didi-request-summary .didi-car-art {
+  width: 87px;
+  height: 47px;
+}
+.didi-request-summary b {
+  font-size: 12px;
+  color: #748764;
+  font-weight: 500;
+}
+.didi-request-summary small {
+  font-size: 8px;
+  color: #a8b59a;
+  display: block;
+  line-height: 1.8;
+  margin-top: 6px;
+}
+.didi-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 18px 0;
+}
+.didi-total > span {
+  font-size: 11px;
+  color: #8da177;
+}
+.didi-total small {
+  display: block;
+  font-size: 7px;
+  color: #b2bda5;
+  margin-top: 5px;
+}
+.didi-total strong {
+  font-size: 31px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  color: #b38d5c;
+}
+.didi-total i {
+  font-size: 17px;
+  font-weight: 400;
+  font-style: normal;
+  margin-right: 4px;
+  color: #cbb18b;
+}
+.didi-safe-note {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  background: #f6f8ec;
+  color: #a3b28d;
+  padding: 10px 8px;
+  font-size: 7px;
+  border-radius: 6px;
+  margin-bottom: 17px;
+  line-height: 1.8;
+}
+.didi-driver-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+.didi-driver-status > span {
+  width: 5px;
+  height: 5px;
+  background: #9eb589;
+  border-radius: 50%;
+}
+.didi-driver-status b {
+  font-size: 11px;
+  font-weight: 500;
+  color: #83996b;
+}
+.didi-driver-status small {
+  font-size: 7px;
+  margin-left: auto;
+  color: #b5bea6;
+}
+.didi-driver-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.didi-driver-avatar {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.didi-driver-avatar svg {
+  width: 100%;
+  height: 100%;
+}
+.didi-driver-card > div:nth-child(2) {
+  flex: 1;
+}
+.didi-driver-card b {
+  font-size: 11px;
+  color: #798e64;
+  font-weight: 500;
+}
+.didi-driver-card b small {
+  font-size: 7px;
+  color: #b2bca4;
+  font-weight: 400;
+  margin-left: 4px;
+}
+.didi-driver-card > div > span {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-top: 6px;
+  font-size: 8px;
+  color: #b7a57b;
+}
+.didi-driver-card i {
+  font-size: 7px;
+  font-style: normal;
+  color: #bac3ad;
+}
+.didi-license {
+  text-align: center;
+  background: #f8f9f0;
+  border: 1px solid #ebeedf;
+  border-radius: 9px;
+  padding: 11px;
+  margin: 16px 0;
+}
+.didi-license > span {
+  display: block;
+  font-size: 8px;
+  color: #a6b398;
+}
+.didi-license strong {
+  display: block;
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #637c50;
+  margin: 7px 0;
+}
+.didi-license small {
+  font-size: 7px;
+  color: #b0bca0;
+}
+.didi-verification-title {
+  font-size: 12px !important;
+  color: #8a9d74 !important;
+  font-weight: 500 !important;
+  margin: 0 0 11px !important;
+}
+.didi-plate-options {
+  gap: 6px;
+  margin-bottom: 13px;
+}
+.didi-plate-options label > span {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 5px 10px;
+  border: 1px solid #e8ecdf;
+  border-radius: 7px;
+  min-height: 40px;
+}
+.didi-plate-options b {
+  font-size: 12px;
+  color: #91a17d;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.didi-plate-options .didi-radio-indicator {
+  margin-left: auto;
+}
+.didi-plate-options input:checked + span {
+  background: #fffaf0;
+  border-color: #e5bc92;
+}
+.didi-app-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 11px 7px 10px;
+  background: #fafbf5;
+  color: #b1bda1;
+  border-top: 1px solid #edf0e5;
+  font-size: 6px;
+  line-height: 1.8;
+  text-align: center;
+}
+.didi-home-indicator {
+  width: 91px;
+  height: 3px;
+  border-radius: 5px;
+  margin: 9px auto;
+  background: #d1dac4;
+}
+.didi-receipt {
+  padding: 27px 20px 20px;
+  text-align: center;
+  min-height: 548px;
+}
+.didi-receipt-check {
+  width: 61px;
+  height: 61px;
+  margin: 0 auto 21px;
+  border-radius: 50%;
+  background: #fff1df;
+  border: 1px solid #f3dcc1;
+  display: grid;
+  place-items: center;
+  color: #dda26e;
+}
+.didi-receipt-kicker {
+  font-size: 7px;
+  letter-spacing: 1.4px;
+  color: #c5aa7c;
+}
+.didi-receipt h3 {
+  font-size: 22px;
+  letter-spacing: -0.8px;
+  font-weight: 600;
+  color: #6d8659;
+  margin: 12px 0;
+}
+.didi-receipt > p {
+  font-size: 10px;
+  color: #a7b299;
+  line-height: 1.9;
+}
+.didi-receipt-card {
+  background: #f8faf0;
+  border: 1px solid #e8eddb;
+  border-radius: 11px;
+  padding: 20px 16px;
+  margin: 23px 0;
+  text-align: left;
+}
+.didi-receipt-card > div:not(.didi-receipt-line) {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-size: 10px;
+  color: #91a37a;
+}
+.didi-receipt-line {
+  width: 1px;
+  height: 21px;
+  background: #e0e7d2;
+  margin: 5px 0 5px 3px;
+}
+.didi-receipt-card dl {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin: 19px 0 0;
+  padding-top: 18px;
+  border-top: 1px dashed #dbe4cc;
+}
+.didi-receipt-card dl > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 9px;
+}
+.didi-receipt-card dt {
+  font-size: 8px;
+  color: #b2bfa1;
+}
+.didi-receipt-card dd {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+  font-size: 10px;
+  color: #8ca171;
+}
+.didi-receipt-card dd small {
+  font-size: 6px;
+  color: #c2b391;
+  background: #f7efdf;
+  padding: 3px 5px;
+  border-radius: 3px;
+}
+.didi-receipt-note {
+  display: block;
+  font-size: 7px;
+  color: #b4bea6;
+  line-height: 1.8;
+  margin-top: 14px;
+}
+.didi-app .sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+@media (max-width: 420px) {
+  .didi-app {
+    border-radius: 20px;
+  }
+  .didi-app-header {
+    padding-inline: 15px;
+  }
+  .didi-addresses {
+    padding-inline: 15px;
+  }
+  .didi-bottom-sheet {
+    padding-inline: 14px;
+  }
+  .didi-stage-label {
+    padding-inline: 15px;
+  }
+  .didi-car-art {
+    width: 62px;
+  }
+  .didi-car-card {
+    gap: 7px;
+    padding: 12px 8px;
+  }
+  .didi-car-name b {
+    font-size: 11px;
+  }
+  .didi-car-name small {
+    font-size: 7px;
+  }
+  .didi-car-price {
+    font-size: 18px;
+  }
+  .didi-car-price small {
+    font-size: 6px;
+  }
+  .didi-addresses em {
+    font-size: 7px;
+  }
+  .didi-receipt {
+    padding-inline: 16px;
+  }
+}
+.pw-device-screen > .didi-app {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.didi-stage-label h3 {
+  font-size: 11px;
+  font-weight: 500;
+  color: #536158;
+  line-height: 1.6;
+  margin: 0;
+  outline: 0;
+}
+.didi-stage-label h3:focus-visible {
+  outline: 2px solid #edb98c;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+.didi-app-header {
+  padding-top: 15px;
+}
+.didi-brand {
+  color: #353c38;
+}
+.didi-addresses b {
+  font-size: 12px;
+  color: #4b574e;
+}
+.didi-addresses small {
+  font-size: 9px;
+  color: #8f9b90;
+}
+.didi-addresses em {
+  font-size: 9px;
+  color: #8c998d;
+}
+.didi-search input {
+  font-size: 14px;
+  color: #3f5047;
+}
+.didi-search input::placeholder {
+  font-size: 13px;
+  color: #969f91;
+}
+.didi-search-heading b {
+  font-size: 12px;
+  color: #6c7d6c;
+}
+.didi-search-heading > span {
+  font-size: 9px;
+}
+.didi-place b {
+  font-size: 15px;
+  color: #465a49;
+}
+.didi-place > span > span {
+  font-size: 10px;
+  color: #7f8f7d;
+}
+.didi-place small {
+  font-size: 9px;
+  color: #929e88;
+}
+.didi-search-tip p {
+  font-size: 10px;
+  color: #87987a;
+}
+.didi-primary {
+  font-size: 13px;
+  min-height: 47px;
+}
+.didi-sheet-title h3 {
+  font-size: 18px;
+  color: #3f5344;
+}
+.didi-sheet-title p {
+  font-size: 10px;
+  color: #899b7f;
+}
+.didi-pickup-options b {
+  font-size: 12px;
+  color: #5f7754;
+}
+.didi-pickup-options small {
+  font-size: 9px;
+  color: #92a182;
+}
+.didi-inline-feedback {
+  font-size: 10px;
+}
+.didi-car-name b {
+  font-size: 14px;
+  color: #4f684b;
+}
+.didi-car-name small {
+  font-size: 9px;
+  color: #84977a;
+}
+.didi-car-price {
+  font-size: 21px;
+  color: #82633f;
+}
+.didi-car-price small {
+  font-size: 8px;
+}
+.didi-request-summary b {
+  font-size: 13px;
+  color: #50674a;
+}
+.didi-request-summary small {
+  font-size: 10px;
+  color: #879b7c;
+}
+.didi-total > span {
+  font-size: 12px;
+  color: #738e61;
+}
+.didi-total small {
+  font-size: 9px;
+}
+.didi-safe-note {
+  font-size: 9px;
+}
+.didi-driver-status b {
+  font-size: 12px;
+  color: #6a8657;
+}
+.didi-driver-status small {
+  font-size: 8px;
+}
+.didi-driver-card b {
+  font-size: 13px;
+  color: #58734c;
+}
+.didi-driver-card b small {
+  font-size: 8px;
+}
+.didi-driver-card > div > span {
+  font-size: 10px;
+}
+.didi-driver-card i {
+  font-size: 8px;
+}
+.didi-license > span {
+  font-size: 10px;
+  color: #89a071;
+}
+.didi-license strong {
+  color: #446337;
+  font-size: 26px;
+}
+.didi-license small {
+  font-size: 9px;
+}
+.didi-verification-title {
+  font-size: 13px !important;
+  color: #6b8757 !important;
+}
+.didi-plate-options b {
+  font-size: 13px;
+  color: #6d8759;
+}
+.didi-app-footer {
+  font-size: 8px;
+  color: #9eaf8b;
+  padding: 13px 8px;
+}
+.didi-receipt > p {
+  font-size: 12px;
+  color: #859b74;
+}
+.didi-receipt-card > div:not(.didi-receipt-line) {
+  font-size: 12px;
+  color: #718d5c;
+}
+.didi-receipt-card dt {
+  font-size: 10px;
+  color: #9bae87;
+}
+.didi-receipt-card dd {
+  font-size: 11px;
+  color: #657f50;
+}
+.didi-receipt-note {
+  font-size: 9px;
+  color: #9bad8a;
+}
+@media (max-width: 340px) {
+  .didi-car-art {
+    width: 54px;
+  }
+  .didi-car-name b {
+    font-size: 12px;
+  }
+  .didi-car-name small {
+    font-size: 8px;
+  }
+  .didi-car-price {
+    font-size: 19px;
+  }
+  .didi-addresses b {
+    font-size: 11px;
+  }
+  .didi-addresses em {
+    font-size: 8px;
+  }
+  .didi-plate-options b {
+    font-size: 12px;
+  }
+}
+.didi-primary {
+  color: #27332b;
+}
+.didi-primary:hover:not(:disabled) {
+  color: #1f2e25;
+}
+.didi-brand {
+  color: #2d3431;
+}
+.didi-sheet-title h3,
+.didi-place b,
+.didi-car-name b,
+.didi-license strong {
+  color: #34443c;
+}
+
+.didi-world-invitation {
+  margin: 10px 0 18px;
+  color: #52665d;
+  font-size: 12px;
+  line-height: 1.8;
+}

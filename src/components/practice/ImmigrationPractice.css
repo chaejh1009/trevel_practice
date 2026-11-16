@@ -1,0 +1,871 @@
+.ip-app {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid #dce2ed;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  color: #263851;
+  text-align: left;
+  font-family: inherit;
+}
+.ip-app * {
+  box-sizing: border-box;
+}
+.ip-header {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 19px 21px;
+  background: #365f9e;
+  color: #fff;
+}
+.ip-logo {
+  display: grid;
+  place-items: center;
+  width: 39px;
+  height: 39px;
+  flex-shrink: 0;
+  border: 1px solid #ffffff47;
+  border-radius: 50%;
+  background: #ffffff12;
+}
+.ip-header > div {
+  flex: 1;
+}
+.ip-header b {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+}
+.ip-header small {
+  display: block;
+  margin-top: 5px;
+  font-size: 8px;
+  letter-spacing: 1.3px;
+  color: #c5d4e8;
+}
+.ip-training {
+  font-size: 9px;
+  color: #d8e2f1;
+  border: 1px solid #ffffff3a;
+  border-radius: 4px;
+  padding: 5px 7px;
+  white-space: nowrap;
+}
+.ip-steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 7px;
+  margin: 0;
+  padding: 20px 20px 16px;
+  list-style: none;
+  background: #fbfcfe;
+  border-bottom: 1px solid #ebeff5;
+  position: relative;
+}
+.ip-steps:before {
+  position: absolute;
+  top: 31px;
+  left: 33px;
+  right: 33px;
+  height: 1px;
+  background: #e0e7f0;
+  content: "";
+}
+.ip-steps li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #a7b2c2;
+  position: relative;
+  z-index: 1;
+}
+.ip-steps li > span {
+  display: grid;
+  place-items: center;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  font-size: 10px;
+  background: #e4eaf2;
+  color: #9daac0;
+  border: 3px solid #fbfcfe;
+}
+.ip-steps small {
+  font-size: 9px;
+}
+.ip-steps .is-current {
+  color: #3c629d;
+  font-weight: 700;
+}
+.ip-steps .is-current > span {
+  color: white;
+  background: #4774b5;
+}
+.ip-steps .is-complete {
+  color: #6a87ab;
+}
+.ip-steps .is-complete > span {
+  background: #dce8f8;
+  color: #6b8bb9;
+}
+.ip-body {
+  padding: 24px;
+}
+.ip-section-heading {
+  margin-bottom: 21px;
+}
+.ip-section-heading > span {
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  color: #8fa3bd;
+  font-weight: 600;
+}
+.ip-section-heading h3 {
+  margin: 8px 0 7px;
+  font-size: 20px;
+  letter-spacing: -0.65px;
+  color: #304969;
+  font-weight: 650;
+  line-height: 1.4;
+}
+.ip-section-heading p {
+  margin: 0;
+  color: #8c9bb0;
+  font-size: 11px;
+  line-height: 1.8;
+}
+.ip-scanner {
+  position: relative;
+  padding: 22px 27px 34px;
+  background: #f2f6fb;
+  border-radius: 9px;
+  border: 1px solid #edf1f7;
+  max-width: 410px;
+  margin: 0 auto 17px;
+}
+.ip-scanner-corner {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #b0c3dc;
+}
+.ip-scanner-corner.a {
+  left: 10px;
+  top: 10px;
+  border-right: 0;
+  border-bottom: 0;
+}
+.ip-scanner-corner.b {
+  right: 10px;
+  top: 10px;
+  border-left: 0;
+  border-bottom: 0;
+}
+.ip-scanner-corner.c {
+  bottom: 10px;
+  left: 10px;
+  border-top: 0;
+  border-right: 0;
+}
+.ip-scanner-corner.d {
+  right: 10px;
+  bottom: 10px;
+  border-top: 0;
+  border-left: 0;
+}
+.ip-scanner.is-scanned .ip-scanner-corner {
+  border-color: #6c9b93;
+}
+.ip-passport {
+  padding: 16px;
+  background: #f8f5e9;
+  border: 1px solid #e4dfca;
+  border-radius: 5px;
+  box-shadow: 0 5px 12px #536b8610;
+  transform: rotate(-1deg);
+}
+.ip-passport-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin-bottom: 17px;
+  color: #7c846b;
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+.ip-passport-heading span {
+  font-size: 7px;
+  color: #aaa48b;
+}
+.ip-passport-person {
+  display: flex;
+  gap: 17px;
+}
+.ip-passport-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 75px;
+  height: 95px;
+  background: #dce5e1;
+  color: #92a69e;
+  border: 3px solid #eef0e4;
+  flex-shrink: 0;
+}
+.ip-passport-photo span {
+  font-size: 8px;
+  color: #8a9b91;
+}
+.ip-passport-person > div:last-child {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 4px;
+  padding: 1px 0;
+}
+.ip-passport-person small {
+  font-size: 6px;
+  color: #a7a58e;
+  letter-spacing: 1px;
+}
+.ip-passport-person b {
+  font-size: 12px;
+  letter-spacing: 1.3px;
+  margin: 0 0 3px;
+  color: #6e785f;
+}
+.ip-mrz {
+  margin-top: 17px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: ui-monospace, monospace;
+  letter-spacing: 1px;
+  color: #a0a184;
+  font-size: 9px;
+  line-height: 1.8;
+}
+.ip-scan-success {
+  position: absolute;
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  bottom: 9px;
+  left: 0;
+  right: 0;
+  font-size: 10px;
+  color: #5d9283;
+}
+.ip-scan-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  padding: 12px;
+  background: #edf3fc;
+  color: #587aaa;
+  border: 1px solid #d7e4f5;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.ip-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 12px 13px;
+  margin-top: 17px;
+  background: #f6f8fb;
+  border-radius: 7px;
+  color: #8396ae;
+}
+.ip-info svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.ip-info p {
+  margin: 0;
+  font-size: 10px;
+  line-height: 1.9;
+  color: #8d9db1;
+}
+.ip-reference {
+  padding: 14px 15px;
+  border: 1px solid #d8e5f4;
+  background: #f5f9ff;
+  border-radius: 7px;
+  margin-bottom: 23px;
+}
+.ip-reference > div {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #5d7fa9;
+  font-size: 11px;
+}
+.ip-reference > div b {
+  flex: 1;
+  font-weight: 600;
+}
+.ip-reference > div > span {
+  font-size: 8px;
+  letter-spacing: 1px;
+  color: #93a7c0;
+}
+.ip-reference dl {
+  margin: 12px 0 0;
+  display: grid;
+  gap: 7px;
+}
+.ip-reference dl > div {
+  display: flex;
+  gap: 9px;
+  font-size: 10px;
+}
+.ip-reference dt {
+  color: #9aabc0;
+  width: 58px;
+  flex-shrink: 0;
+}
+.ip-reference dd {
+  margin: 0;
+  color: #6e86a5;
+}
+.ip-form-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  border-bottom: 1px solid #e8edf5;
+  padding-bottom: 9px;
+  margin: 22px 0 13px;
+}
+.ip-form-section:first-child {
+  margin-top: 0;
+}
+.ip-form-section span {
+  font-size: 12px;
+  font-weight: 650;
+  color: #5d7799;
+}
+.ip-form-section small {
+  font-size: 8px;
+  letter-spacing: 1px;
+  color: #abb7c6;
+}
+.ip-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.ip-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 10px;
+  color: #6a7f9a;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+.ip-form input,
+.ip-form select {
+  width: 100%;
+  min-width: 0;
+  height: 42px;
+  background: white;
+  color: #506a8d;
+  border: 1px solid #dae3f0;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-family: inherit;
+  font-size: 11px;
+  color-scheme: light;
+}
+.ip-form input[readonly] {
+  background: #f7f9fc;
+  color: #9aa9bd;
+}
+.ip-form label > small {
+  font-size: 8px;
+  font-weight: 400;
+  color: #a4b0c0;
+  line-height: 1.6;
+}
+.ip-form .ip-selected-address {
+  letter-spacing: 0.3px;
+  color: #8c9eb7;
+  font-size: 8px;
+}
+.ip-app input:focus-visible,
+.ip-app select:focus-visible,
+.ip-app button:focus-visible {
+  outline: 3px solid #adc4e9;
+  outline-offset: 3px;
+}
+.ip-validation {
+  display: flex;
+  gap: 7px;
+  padding: 10px 12px;
+  background: #fcf5ee;
+  color: #ae8b67;
+  border-radius: 5px;
+  font-size: 10px;
+  line-height: 1.8;
+}
+.ip-validation svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.ip-review-card {
+  border: 1px solid #d8e3f1;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.ip-review-card header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  background: #f2f6fc;
+  color: #6e8eb7;
+}
+.ip-review-card header > div {
+  flex: 1;
+}
+.ip-review-card header b {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  color: #5578a6;
+}
+.ip-review-card header small {
+  display: block;
+  font-size: 9px;
+  margin-top: 5px;
+  color: #9cacc0;
+}
+.ip-review-card header > span {
+  font-size: 8px;
+  letter-spacing: 1px;
+  color: #9dafc8;
+}
+.ip-review-card dl {
+  padding: 9px 17px;
+  margin: 0;
+}
+.ip-review-card dl > div {
+  padding: 14px 0;
+  border-bottom: 1px solid #edf1f7;
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 8px;
+}
+.ip-review-card dl > div:last-child {
+  border-bottom: 0;
+}
+.ip-review-card dt {
+  font-size: 8px;
+  letter-spacing: 0.7px;
+  color: #9eaec3;
+  line-height: 1.8;
+}
+.ip-review-card dd {
+  margin: 0;
+  font-size: 11px;
+  color: #5c789d;
+  font-weight: 600;
+  line-height: 1.7;
+}
+.ip-review-card dd small {
+  display: block;
+  font-size: 8px;
+  color: #a3b1c3;
+  line-height: 1.8;
+  margin-top: 5px;
+  word-break: break-word;
+}
+.ip-review-card > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #eaf0f7;
+  background: white;
+  color: #96a9c2;
+  font-size: 10px;
+  padding: 11px;
+  cursor: pointer;
+}
+.ip-agree {
+  display: flex;
+  gap: 9px;
+  align-items: flex-start;
+  padding: 15px 12px;
+  margin-top: 17px;
+  background: #f3f7fc;
+  border: 1px solid #e5edf7;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.ip-agree input {
+  accent-color: #527ab1;
+  width: 16px;
+  height: 16px;
+  margin: 1px 0;
+  flex-shrink: 0;
+}
+.ip-agree span {
+  font-size: 10px;
+  line-height: 1.8;
+  color: #7690b0;
+}
+.ip-counter {
+  display: flex;
+  border: 1px solid #d8e4f3;
+  border-radius: 7px;
+  overflow: hidden;
+  margin-bottom: 23px;
+}
+.ip-counter-number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 86px;
+  padding: 13px;
+  background: #4671ad;
+  color: #d1e0f6;
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+.ip-counter-number strong {
+  font-size: 30px;
+  color: white;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.ip-counter > div:last-child {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #7e9abf;
+  background: #f8faff;
+  flex: 1;
+}
+.ip-counter b {
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #5d7fae;
+}
+.ip-counter span {
+  font-size: 9px;
+  color: #9aaec8;
+}
+.ip-question {
+  padding: 0;
+  border: 0;
+  margin: 0 0 24px;
+  min-width: 0;
+}
+.ip-question legend {
+  padding: 0;
+  margin-bottom: 12px;
+  font-size: 12px;
+  color: #59779c;
+  font-weight: 600;
+  line-height: 1.7;
+}
+.ip-question legend > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 6px;
+  background: #edf3fc;
+  color: #7d9cc5;
+  border-radius: 4px;
+  font-size: 9px;
+  margin-right: 8px;
+}
+.ip-question legend small {
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  color: #9cacc2;
+  margin: 6px 0 0 33px;
+}
+.ip-question > div {
+  display: grid;
+  gap: 8px;
+}
+.ip-question button {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 0;
+  padding: 12px 13px;
+  background: white;
+  border: 1px solid #e0e8f3;
+  border-radius: 6px;
+  color: #879dbb;
+  text-align: left;
+  cursor: pointer;
+}
+.ip-question button.is-selected {
+  border-color: #83a4d0;
+  background: #f2f7fd;
+  box-shadow: 0 0 0 1px #a4bbdb66;
+}
+.ip-question button > span {
+  flex: 1;
+  min-width: 0;
+}
+.ip-question button b {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  color: #6883a5;
+}
+.ip-question button small {
+  display: block;
+  margin-top: 5px;
+  font-size: 9px;
+  color: #9aaec7;
+  overflow-wrap: anywhere;
+}
+.ip-answer-note {
+  font-size: 10px;
+  line-height: 1.8;
+  color: #b29a77;
+  margin: 9px 0 0;
+}
+.ip-truth-note {
+  display: flex;
+  gap: 5px;
+  font-size: 9px;
+  line-height: 1.7;
+  color: #9cabc0;
+  margin: 0;
+}
+.ip-truth-note svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.ip-completion {
+  text-align: center;
+}
+.ip-dummy-stamp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 171px;
+  height: 171px;
+  padding: 18px;
+  margin: 4px auto 25px;
+  border: 3px double #7b9ec9;
+  border-radius: 50%;
+  outline: 1px dashed #9bb4d4;
+  outline-offset: -10px;
+  color: #6a91bf;
+  transform: rotate(-9deg);
+}
+.ip-dummy-stamp strong {
+  font-size: 19px;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin: 5px 0 8px;
+}
+.ip-dummy-stamp > span {
+  font-size: 6px;
+  letter-spacing: 1px;
+}
+.ip-completion > h3 {
+  font-size: 19px;
+  color: #4a6d9a;
+  letter-spacing: -0.6px;
+  margin: 0 0 8px;
+}
+.ip-completion > p {
+  font-size: 11px;
+  color: #99a9bd;
+  line-height: 1.8;
+  margin: 0 0 21px;
+}
+.ip-receipt {
+  padding: 18px 21px;
+  background: #f7f9fc;
+  border: 1px solid #e4ebf5;
+  border-radius: 7px;
+  text-align: left;
+}
+.ip-receipt > span {
+  display: block;
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  color: #a2b2c7;
+}
+.ip-receipt > b {
+  display: block;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #6583aa;
+  margin-top: 9px;
+}
+.ip-receipt dl {
+  margin: 15px 0 17px;
+  display: grid;
+  gap: 9px;
+}
+.ip-receipt dl > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 10px;
+}
+.ip-receipt dt {
+  color: #a0b0c6;
+}
+.ip-receipt dd {
+  margin: 0;
+  color: #7b96b9;
+}
+.ip-receipt > strong {
+  display: block;
+  text-align: center;
+  font-size: 10px;
+  color: #99aac2;
+  border-top: 1px dashed #dae3ef;
+  padding-top: 13px;
+  font-weight: 500;
+}
+.ip-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 23px;
+}
+.ip-actions > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+}
+.ip-back {
+  border: 1px solid #dde5ef;
+  background: white;
+  color: #93a4bc;
+}
+.ip-next {
+  flex: 1;
+  background: #4272b4;
+  border: 1px solid #4272b4;
+  color: #fff;
+}
+.ip-next:disabled {
+  background: #e3eaf3;
+  border-color: #e3eaf3;
+  color: #a4b1c4;
+  cursor: not-allowed;
+}
+.ip-footer {
+  display: flex;
+  gap: 6px;
+  margin-top: 20px;
+  color: #a8b5c7;
+}
+.ip-footer > svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+.ip-footer p {
+  margin: 0;
+  font-size: 9px;
+  line-height: 1.9;
+  color: #a5b2c4;
+}
+.ip-footer a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #95a9c5;
+  text-underline-offset: 3px;
+  margin-top: 4px;
+  width: fit-content;
+}
+@media (max-width: 520px) {
+  .ip-header {
+    padding: 16px 14px;
+    gap: 9px;
+  }
+  .ip-header b {
+    font-size: 14px;
+  }
+  .ip-header small {
+    font-size: 7px;
+  }
+  .ip-training {
+    font-size: 8px;
+    padding: 4px 5px;
+  }
+  .ip-body {
+    padding: 20px 15px;
+  }
+  .ip-steps {
+    padding: 17px 13px 14px;
+  }
+  .ip-steps:before {
+    top: 28px;
+  }
+  .ip-steps small {
+    font-size: 8px;
+  }
+  .ip-section-heading h3 {
+    font-size: 18px;
+  }
+  .ip-scanner {
+    padding: 20px 16px 34px;
+  }
+  .ip-passport {
+    padding: 14px;
+  }
+  .ip-passport-person {
+    gap: 14px;
+  }
+  .ip-passport-photo {
+    width: 64px;
+    height: 92px;
+  }
+  .ip-mrz {
+    font-size: 8px;
+    letter-spacing: 0.5px;
+  }
+  .ip-review-card dl > div {
+    grid-template-columns: 80px 1fr;
+  }
+  .ip-counter-number {
+    min-width: 72px;
+  }
+  .ip-form-section small {
+    font-size: 7px;
+    letter-spacing: 0.5px;
+  }
+}

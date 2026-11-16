@@ -1,0 +1,195 @@
+.field-touch-controls {
+  display: none;
+}
+.field-layout .field-player-self {
+  transition: none;
+}
+.world-bottom .movement-tip {
+  font-size: 8px;
+  gap: 5px;
+}
+.world-bottom .movement-tip > span:last-child {
+  white-space: nowrap;
+}
+.field-objective .primary {
+  min-height: 42px;
+}
+.dialogue-open .field-touch-controls {
+  display: none !important;
+}
+@media (max-width: 1000px) {
+  .world-bottom .movement-tip > .control-divider,
+  .world-bottom .movement-tip > .mouse-symbol {
+    display: none;
+  }
+  .world-bottom .movement-tip > span:last-child {
+    font-size: 7px;
+  }
+}
+@media (max-width: 760px) {
+  .field-touch-controls {
+    display: flex;
+    position: fixed;
+    left: 84px;
+    bottom: 17px;
+    right: 16px;
+    z-index: 45;
+    align-items: flex-end;
+    justify-content: space-between;
+    pointer-events: none;
+  }
+  .touch-direction-pad {
+    pointer-events: auto;
+    display: grid;
+    grid-template-columns: 35px 35px 35px;
+    grid-template-rows: 35px 35px;
+    gap: 3px;
+    padding: 5px;
+    border-radius: 16px;
+    background: #fdfbf0c9;
+    border: 1px solid #d8e0cd;
+    box-shadow: 0 3px 18px #304e351a;
+    backdrop-filter: blur(5px);
+    touch-action: none;
+  }
+  .touch-direction-pad button {
+    background: #edf2e3;
+    border: 1px solid #d6e1c8;
+    border-radius: 9px;
+    display: grid;
+    place-items: center;
+    color: #7b9670;
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .touch-direction-pad button:active {
+    background: #c8dfb9;
+    transform: none;
+  }
+  .touch-dir-up {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .touch-dir-left {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .touch-dir-down {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .touch-dir-right {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .touch-interact {
+    pointer-events: auto;
+    background: #fffdf4da;
+    border: 1px solid #cfddc0;
+    border-radius: 50%;
+    width: 57px;
+    height: 57px;
+    color: #89a078;
+    box-shadow: 0 3px 18px #304e351a;
+    backdrop-filter: blur(4px);
+    font-size: 10px;
+    touch-action: manipulation;
+  }
+  .touch-interact.ready {
+    background: #3d8166;
+    color: #f9f5dd;
+    border-color: #75a078;
+  }
+  .world-bottom .movement-tip > span:last-child {
+    white-space: normal;
+    max-width: 140px !important;
+  }
+  .field-layout .world-bottom {
+    height: 54px;
+  }
+  .field-layout {
+    margin-bottom: 8px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .field-touch-controls * {
+    transition: none !important;
+  }
+}
+.field-world-svg:focus-visible {
+  outline: 2px solid #78a88a;
+  outline-offset: -3px;
+}
+
+.field-objective.taxi-objective {
+  display: block;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+.taxi-objective > .taxi-ride-panel {
+  max-width: none;
+}
+.taxi-map-assignment {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .taxi-map-assignment {
+    display: grid;
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    z-index: 2;
+    gap: 5px;
+    max-width: 180px;
+    padding: 10px 12px;
+    border-radius: 11px;
+    background: #fffdf5f2;
+    border: 1px solid #cedcc2;
+    box-shadow: 0 4px 15px #304e3515;
+    color: #3b5c40;
+  }
+  .taxi-map-assignment > span {
+    font-size: 9px;
+  }
+  .taxi-map-assignment > strong {
+    font-size: 19px;
+    letter-spacing: 1px;
+  }
+  .taxi-map-assignment > small {
+    font-size: 8px;
+    line-height: 1.6;
+  }
+  .taxi-map-assignment > button {
+    background: #3f7755;
+    color: #fffdf0;
+    border-radius: 6px;
+    padding: 8px;
+    margin-top: 4px;
+    font-size: 10px;
+  }
+  .taxi-map-assignment > p {
+    color: #865521;
+    font-size: 9px;
+    line-height: 1.7;
+    margin: 4px 0 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .taxi-map-assignment {
+    top: 8px;
+    right: 8px;
+    left: auto;
+    max-width: 150px;
+    padding: 8px 10px;
+    gap: 3px;
+  }
+  .taxi-map-assignment > strong {
+    font-size: 16px;
+  }
+  .taxi-map-assignment > small {
+    display: none;
+  }
+}

@@ -1,0 +1,93 @@
+.taxi-fleet-vehicle {
+  cursor: pointer;
+  outline: none;
+}
+.taxi-fleet-vehicle[aria-disabled="true"] {
+  cursor: default;
+}
+.taxi-fleet-focus {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s;
+}
+.taxi-fleet-vehicle:hover .taxi-fleet-focus,
+.taxi-fleet-vehicle:focus-visible .taxi-fleet-focus,
+.taxi-fleet-near .taxi-fleet-focus {
+  opacity: 1;
+}
+.taxi-fleet-selected .taxi-fleet-label > rect:first-of-type {
+  stroke: #ba9d72;
+  stroke-width: 2;
+}
+.taxi-fleet-vehicle:focus-visible .taxi-fleet-label > rect:first-of-type {
+  stroke: #537e5e;
+  stroke-width: 2.5;
+}
+.taxi-fleet-door-hint {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s;
+}
+.taxi-fleet-near .taxi-fleet-door-hint,
+.taxi-fleet-boarded .taxi-fleet-door-hint {
+  opacity: 1;
+}
+.taxi-fleet-door {
+  transform-origin: 0 0;
+  transition: transform 0.4s ease;
+}
+.taxi-fleet-door-open {
+  transform: translate(14px, -9px) rotate(-29deg);
+}
+.taxi-fleet-entering {
+  animation: taxi-arrive 1.8s cubic-bezier(0.2, 0.65, 0.25, 1) both;
+}
+.taxi-fleet-leaving {
+  animation: taxi-depart 1.45s ease-in 0.3s forwards;
+}
+.taxi-fleet-ground {
+  pointer-events: none;
+}
+.taxi-fleet[data-phase="boarding"] .taxi-fleet-boarded .taxi-fleet-ground {
+  fill: #a0b88c35;
+}
+@keyframes taxi-arrive {
+  0% {
+    transform: translate(-170px, -85px);
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes taxi-depart {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(280px, 140px);
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .taxi-fleet-motion,
+  .taxi-fleet-door {
+    animation: none !important;
+    transition: none !important;
+  }
+  .taxi-fleet-leaving {
+    opacity: 0;
+  }
+  .taxi-fleet-focus,
+  .taxi-fleet-door-hint {
+    transition: none;
+  }
+}

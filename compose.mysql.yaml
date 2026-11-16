@@ -1,0 +1,25 @@
+# docker compose -f compose.yaml -f compose.mysql.yaml up --build
+services:
+  web:
+    environment:
+      DATABASE_URL: mysql://passport:${MYSQL_PASSWORD:-local-passport-password}@mysql:3306/passport
+    depends_on:
+      mysql:
+        condition: service_healthy
+  mysql:
+    image: mysql:8.4
+    environment:
+      MYSQL_DATABASE: passport
+      MYSQL_USER: passport
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-local-passport-password}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-local-root-password}
+    command: ["--character-set-server=utf8mb4", "--collation-server=utf8mb4_unicode_ci"]
+    volumes:
+      - mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost -u root -p\"$$MYSQL_ROOT_PASSWORD\" --silent"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+volumes:
+  mysql-data:

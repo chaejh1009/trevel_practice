@@ -1,0 +1,605 @@
+{
+  "asset": "traveler-atlas-v2.png",
+  "sourceSha256": "02b025c700efc773a6ea7398f6400d178f3387a0816919fb9848982c8213d42c",
+  "width": 1254,
+  "height": 1254,
+  "columns": 4,
+  "rows": 4,
+  "cellWidth": 313.5,
+  "cellHeight": 313.5,
+  "directions": [
+    "down",
+    "left",
+    "right",
+    "up"
+  ],
+  "boundsAlphaThreshold": 32,
+  "commonContentBounds": {
+    "x": 90.5,
+    "y": 9.5,
+    "width": 133,
+    "height": 292.5
+  },
+  "alpha": {
+    "transparentPixels": 1048167,
+    "opaquePixels": 259,
+    "partialPixels": 524090,
+    "cornerAlpha": [
+      0,
+      0,
+      1,
+      0
+    ]
+  },
+  "filters": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "frames": [
+    {
+      "direction": "down",
+      "row": 0,
+      "column": 0,
+      "x": 0,
+      "y": 0,
+      "width": 313.5,
+      "height": 313.5,
+      "pixelPartition": {
+        "x": 0,
+        "y": 0,
+        "width": 313,
+        "height": 313
+      },
+      "contentBounds": {
+        "x": 96,
+        "y": 12,
+        "width": 126,
+        "height": 286
+      },
+      "absoluteContentBounds": {
+        "x": 96,
+        "y": 12,
+        "width": 126,
+        "height": 286
+      },
+      "visiblePixels": 32695,
+      "opaquePixels": 24,
+      "partialPixels": 32671,
+      "componentCount": 1,
+      "largestComponentPixels": 24708,
+      "smallComponentCount": 0,
+      "smallComponentPixels": 0,
+      "touchesCellBoundary": false
+    },
+    {
+      "direction": "down",
+      "row": 0,
+      "column": 1,
+      "x": 313.5,
+      "y": 0,
+      "width": 313.5,
+      "height": 313.5,
+      "pixelPartition": {
+        "x": 313,
+        "y": 0,
+        "width": 314,
+        "height": 313
+      },
+      "contentBounds": {
+        "x": 92.5,
+        "y": 12,
+        "width": 130,
+        "height": 290
+      },
+      "absoluteContentBounds": {
+        "x": 406,
+        "y": 12,
+        "width": 130,
+        "height": 290
+      },
+      "visiblePixels": 33037,
+      "opaquePixels": 46,
+      "partialPixels": 32991,
+      "componentCount": 1,
+      "largestComponentPixels": 24369,
+      "smallComponentCount": 0,
+      "smallComponentPixels": 0,
+      "touchesCellBoundary": false
+    },
+    {
+      "direction": "down",
+      "row": 0,
+      "column": 2,
+      "x": 627,
+      "y": 0,
+      "width": 313.5,
+      "height": 313.5,
+      "pixelPartition": {
+        "x": 627,
+        "y": 0,
+        "width": 313,
+        "height": 313
+      },
+      "contentBounds": {
+        "x": 96,
+        "y": 12,
+        "width": 126,
+        "height": 283
+      },
+      "absoluteContentBounds": {
+        "x": 723,
+        "y": 12,
+        "width": 126,
+        "height": 283
+      },
+      "visiblePixels": 31482,
+      "opaquePixels": 12,
+      "partialPixels": 31470,
+      "componentCount": 1,
+      "largestComponentPixels": 24032,
+      "smallComponentCount": 0,
+      "smallComponentPixels": 0,
+      "touchesCellBoundary": false
+    },
+    {
+      "direction": "down",
+      "row": 0,
+      "column": 3,
+      "x": 940.5,
+      "y": 0,
+      "width": 313.5,
+      "height": 313.5,
+      "pixelPartition": {
+        "x": 940,
+        "y": 0,
+        "width": 314,
+        "height": 313
+      },
+      "contentBounds": {
+        "x": 95.5,
+        "y": 12,
+        "width": 127,
+        "height": 289
+      },
+      "absoluteContentBounds": {
+        "x": 1036,
+        "y": 12,
+        "width": 127,
+        "height": 289
+      },
+      "visiblePixels": 32005,
+      "opaquePixels": 12,
+      "partialPixels": 31993,
+      "componentCount": 1,
+      "largestComponentPixels": 23819,
+      "smallComponentCount": 0,
+      "smallComponentPixels": 0,
+      "touchesCellBoundary": false
+    },
+    {
+      "direction": "left",
+      "row": 1,
+      "column": 0,
+      "x": 0,
+      "y": 313.5,
+      "width": 313.5,
+      "height": 313.5,
+      "pixelPartition": {
+        "x": 0,
+        "y": 313,
+        "width": 313,
+        "height": 314
+      },
+      "contentBounds": {
+        "x": 91,
+        "y": 10.5,
+        "width": 131,
+        "height": 287
+      },
+      "absoluteContentBounds": {
+        "x": 91,
+        "y": 324,
+        "width": 131,
+        "height": 287
+      },
+      "visiblePixels": 31753,
+      "opaquePixels": 16,
+      "partialPixels": 31737,
+      "componentCount": 1,
+      "largestComponentPixels": 21789,
+      "smallComponentCount": 0,
+      "smallComponentPixels": 0,
+      "touchesCellBoundary": false
+    },
+    {
+      "direction": "left",
+      "row": 1,
+      "column": 1,
+      "x": 313.5,
+      "y": 313.5,
+      "width": 313.5,
+      "height": 313.5,
+      "pixelPartition": {
+        "x": 313,
+        "y": 313,
+        "width": 314,
+        "height": 314
+      },
+      "contentBounds": {
+        "x": 91.5,
+        "y": 10.5,
+        "width": 132,
+        "height": 287
+      },
+      "absoluteContentBounds": {
+        "x": 405,
+        "y": 324,
+        "width": 132,
+        "height": 287
+      },
+      "visiblePixels": 34501,
+      "opaquePixels": 17,
+      "partialPixels": 34484,
+      "componentCount": 1,
+      "largestComponentPixels": 24577,
+      "smallComponentCount": 0,
+      "smallComponentPixels": 0,
+      "touchesCellBoundary": false
+    },
+    {
+      "direction": "left",
+      "row": 1,
+      "column": 2,
+      "x": 627,
+      "y": 313.5,
+      "width": 313.5,
+      "height": 313.5,
+      "pixelPartition": {
+        "x": 627,
+        "y": 313,
+        "width": 313,
+        "height": 314
+      },
+      "contentBounds": {
+        "x": 91,
+        "y": 10.5,
+        "width": 132,
+        "height": 285
+      },
+      "absoluteContentBounds": {
+        "x": 718,
+        "y": 324,
+        "width": 132,
+        "height": 285
+      },
+      "visiblePixels": 31210,
+      "opaquePixels": 14,
+      "partialPixels": 31196,
+      "componentCount": 1,
+      "largestComponentPixels": 21482,
+      "smallComponentCount": 0,
+      "smallComponentPixels": 0,
+      "touchesCellBoundary": false
+    },
+    {
+      "direction": "left",
+      "row": 1,
+      "column": 3,
+      "x": 940.5,
+      "y": 313.5,
+      "width": 313.5,
+      "height": 313.5,
+      "pixelPartition": {
+        "x": 940,
+        "y": 313,
+        "width": 314,
+        "height": 314
+      },
+      "contentBounds": {
+        "x": 92.5,
+        "y": 11.5,
+        "width": 131,
+        "height": 286
+      },
+      "absoluteContentBounds": {
+        "x": 1033,
+        "y": 325,
+        "width": 131,
+        "height": 286
+      },
+      "visiblePixels": 34208,
+      "opaquePixels": 30,
+      "partialPixels": 34178,
+      "componentCount": 1,
+      "largestComponentPixels": 24558,
+      "smallComponentCount": 0,
+      "smallComponentPixels": 0,
+      "touchesCellBoundary": false
+    },
+    {
+      "direction": "right",
+      "row": 2,
+      "column": 0,
+      "x": 0,
+      "y": 627,
+      "width": 313.5,
+      "height": 313.5,
+      "pixelPartition": {
+        "x": 0,
+        "y": 627,
+        "width": 313,
+        "height": 313
+      },
+      "contentBounds": {
+        "x": 91,
+        "y": 11,
+        "width": 131,
+        "height": 285
+      },
+      "absoluteContentBounds": {
+        "x": 91,
+        "y": 638,
+        "width": 131,
+        "height": 285
+      },
+      "visiblePixels": 31109,
+      "opaquePixels": 5,
+      "partialPixels": 31104,
+      "componentCount": 1,
+      "largestComponentPixels": 21548,
+      "smallComponentCount": 0,
+      "smallComponentPixels": 0,
+      "touchesCellBoundary": false
+    },
+    {
+      "direction": "right",
+      "row": 2,
+      "column": 1,
+      "x": 313.5,
+      "y": 627,
+      "width": 313.5,
+      "height": 313.5,
+      "pixelPartition": {
+        "x": 313,
+        "y": 627,
+        "width": 314,
+        "height": 313
+      },
+      "contentBounds": {
+        "x": 90.5,
+        "y": 11,
+        "width": 132,
+        "height": 285
+      },
+      "absoluteContentBounds": {
+        "x": 404,
+        "y": 638,
+        "width": 132,
+        "height": 285
+      },
+      "visiblePixels": 34728,
+      "opaquePixels": 7,
+      "partialPixels": 34721,
+      "componentCount": 1,
+      "largestComponentPixels": 24607,
+      "smallComponentCount": 0,
+      "smallComponentPixels": 0,
+      "touchesCellBoundary": false
+    },
+    {
+      "direction": "right",
+      "row": 2,
+      "column": 2,
+      "x": 627,
+      "y": 627,
+      "width": 313.5,
+      "height": 313.5,
+      "pixelPartition": {
+        "x": 627,
+        "y": 627,
+        "width": 313,
+        "height": 313
+      },
+      "contentBounds": {
+        "x": 91,
+        "y": 12,
+        "width": 131,
+        "height": 284
+      },
+      "absoluteContentBounds": {
+        "x": 718,
+        "y": 639,
+        "width": 131,
+        "height": 284
+      },
+      "visiblePixels": 30708,
+      "opaquePixels": 4,
+      "partialPixels": 30704,
+      "componentCount": 1,
+      "largestComponentPixels": 21186,
+      "smallComponentCount": 0,
+      "smallComponentPixels": 0,
+      "touchesCellBoundary": false
+    },
+    {
+      "direction": "right",
+      "row": 2,
+      "column": 3,
+      "x": 940.5,
+      "y": 627,
+      "width": 313.5,
+      "height": 313.5,
+      "pixelPartition": {
+        "x": 940,
+        "y": 627,
+        "width": 314,
+        "height": 313
+      },
+      "contentBounds": {
+        "x": 90.5,
+        "y": 12,
+        "width": 132,
+        "height": 284
+      },
+      "absoluteContentBounds": {
+        "x": 1031,
+        "y": 639,
+        "width": 132,
+        "height": 284
+      },
+      "visiblePixels": 36247,
+      "opaquePixels": 14,
+      "partialPixels": 36233,
+      "componentCount": 1,
+      "largestComponentPixels": 24512,
+      "smallComponentCount": 0,
+      "smallComponentPixels": 0,
+      "touchesCellBoundary": false
+    },
+    {
+      "direction": "up",
+      "row": 3,
+      "column": 0,
+      "x": 0,
+      "y": 940.5,
+      "width": 313.5,
+      "height": 313.5,
+      "pixelPartition": {
+        "x": 0,
+        "y": 940,
+        "width": 313,
+        "height": 314
+      },
+      "contentBounds": {
+        "x": 92,
+        "y": 10.5,
+        "width": 128,
+        "height": 286
+      },
+      "absoluteContentBounds": {
+        "x": 92,
+        "y": 951,
+        "width": 128,
+        "height": 286
+      },
+      "visiblePixels": 32970,
+      "opaquePixels": 9,
+      "partialPixels": 32961,
+      "componentCount": 1,
+      "largestComponentPixels": 24668,
+      "smallComponentCount": 0,
+      "smallComponentPixels": 0,
+      "touchesCellBoundary": false
+    },
+    {
+      "direction": "up",
+      "row": 3,
+      "column": 1,
+      "x": 313.5,
+      "y": 940.5,
+      "width": 313.5,
+      "height": 313.5,
+      "pixelPartition": {
+        "x": 313,
+        "y": 940,
+        "width": 314,
+        "height": 314
+      },
+      "contentBounds": {
+        "x": 91.5,
+        "y": 10.5,
+        "width": 129,
+        "height": 286
+      },
+      "absoluteContentBounds": {
+        "x": 405,
+        "y": 951,
+        "width": 129,
+        "height": 286
+      },
+      "visiblePixels": 32685,
+      "opaquePixels": 12,
+      "partialPixels": 32673,
+      "componentCount": 1,
+      "largestComponentPixels": 23784,
+      "smallComponentCount": 0,
+      "smallComponentPixels": 0,
+      "touchesCellBoundary": false
+    },
+    {
+      "direction": "up",
+      "row": 3,
+      "column": 2,
+      "x": 627,
+      "y": 940.5,
+      "width": 313.5,
+      "height": 313.5,
+      "pixelPartition": {
+        "x": 627,
+        "y": 940,
+        "width": 313,
+        "height": 314
+      },
+      "contentBounds": {
+        "x": 92,
+        "y": 9.5,
+        "width": 128,
+        "height": 287
+      },
+      "absoluteContentBounds": {
+        "x": 719,
+        "y": 950,
+        "width": 128,
+        "height": 287
+      },
+      "visiblePixels": 33267,
+      "opaquePixels": 14,
+      "partialPixels": 33253,
+      "componentCount": 1,
+      "largestComponentPixels": 24142,
+      "smallComponentCount": 0,
+      "smallComponentPixels": 0,
+      "touchesCellBoundary": false
+    },
+    {
+      "direction": "up",
+      "row": 3,
+      "column": 3,
+      "x": 940.5,
+      "y": 940.5,
+      "width": 313.5,
+      "height": 313.5,
+      "pixelPartition": {
+        "x": 940,
+        "y": 940,
+        "width": 314,
+        "height": 314
+      },
+      "contentBounds": {
+        "x": 91.5,
+        "y": 10.5,
+        "width": 129,
+        "height": 286
+      },
+      "absoluteContentBounds": {
+        "x": 1032,
+        "y": 951,
+        "width": 129,
+        "height": 286
+      },
+      "visiblePixels": 31744,
+      "opaquePixels": 23,
+      "partialPixels": 31721,
+      "componentCount": 1,
+      "largestComponentPixels": 24093,
+      "smallComponentCount": 0,
+      "smallComponentPixels": 0,
+      "touchesCellBoundary": false
+    }
+  ],
+  "warnings": [
+    "Image corner alpha values are 0,0,1,0; exact alpha-zero corners are not guaranteed by the generated source."
+  ]
+}

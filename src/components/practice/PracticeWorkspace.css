@@ -1,0 +1,639 @@
+.practice-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 110;
+  display: grid;
+  place-items: center;
+  padding: 26px 34px 26px 252px;
+  background: #223c356b;
+  backdrop-filter: blur(7px);
+}
+.practice-dialog {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  max-height: calc(100dvh - 52px);
+  background: #f5f6f0;
+  border: 1px solid #e7e9df;
+  border-radius: 16px;
+  box-shadow: 0 24px 90px #132f3438;
+  color: #2e453c;
+  overflow: auto;
+  outline: 0;
+  scrollbar-width: thin;
+  scrollbar-color: #b7c8b0 transparent;
+}
+.practice-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 31px;
+  height: 31px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #dfe5d8;
+  border-radius: 50%;
+  background: #fffefa;
+  color: #879782;
+  z-index: 5;
+}
+.practice-close:hover {
+  background: #e6eedf;
+}
+.practice-close:focus-visible {
+  outline: 2px solid #4b8a70;
+  outline-offset: 3px;
+}
+.practice-workspace {
+  padding: 30px 32px 24px;
+}
+.pw-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-right: 40px;
+  border-bottom: 1px solid #e0e7d7;
+  padding-bottom: 21px;
+}
+.pw-eyebrow {
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  color: #90a081;
+  font-weight: 600;
+}
+.pw-heading h2 {
+  font-size: 25px;
+  line-height: 1.6;
+  font-weight: 600;
+  letter-spacing: -0.7px;
+  margin: 7px 0 5px;
+}
+.pw-heading p {
+  font-size: 12px;
+  line-height: 1.8;
+  color: #929e87;
+}
+.pw-training-badge {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+  color: #6d8965;
+  border: 1px solid #dbe4ce;
+  background: #eaf0e0;
+  border-radius: 16px;
+  font-size: 10px;
+  padding: 6px 10px;
+}
+.pw-body {
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr);
+  gap: 32px;
+  padding-top: 23px;
+}
+.pw-guide {
+  padding: 5px 0 0;
+}
+.pw-guide-hero {
+  position: relative;
+  width: 145px;
+  height: 145px;
+  margin: 0 auto 7px;
+  background: radial-gradient(ellipse at 50% 75%, #e5eadc, transparent 70%);
+}
+.pw-guide-hero > .jungtoki-guide {
+  width: 151px;
+  height: 151px;
+  margin-left: -3px;
+  object-fit: contain;
+}
+.pw-guide-spark {
+  position: absolute;
+  right: -1px;
+  top: 25px;
+  font-size: 19px;
+  color: #c9ad73;
+}
+.pw-guide-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 12px 0 17px;
+}
+.pw-guide-name b {
+  font-size: 14px;
+  font-weight: 600;
+}
+.pw-guide-name > span {
+  font-size: 9px;
+  color: #a2ad92;
+  border: 1px solid #dee5d3;
+  border-radius: 5px;
+  padding: 3px 6px;
+  background: #fdfdf5;
+}
+.pw-guide-bubble {
+  position: relative;
+  background: #fffefa;
+  border: 1px solid #dfe7d5;
+  border-radius: 10px;
+  padding: 17px;
+  font-size: 12px;
+  line-height: 1.9;
+  color: #74886a;
+  min-height: 97px;
+  white-space: pre-line;
+}
+.pw-guide-bubble:before {
+  content: "";
+  position: absolute;
+  left: calc(50% - 6px);
+  top: -7px;
+  width: 11px;
+  height: 11px;
+  background: #fffefa;
+  border-left: 1px solid #dfe7d5;
+  border-top: 1px solid #dfe7d5;
+  transform: rotate(45deg);
+}
+.pw-guide-route {
+  margin-top: 24px;
+  padding: 0 8px;
+}
+.pw-guide-route > span {
+  display: block;
+  color: #9caa8c;
+  font-size: 9px;
+  letter-spacing: 0.4px;
+  margin-bottom: 13px;
+}
+.pw-guide-route > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #8b9e79;
+  font-size: 10px;
+  margin-top: 12px;
+  line-height: 1.6;
+}
+.pw-guide-route i {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #d9e2cc;
+  border-radius: 50%;
+  font-style: normal;
+  font-size: 8px;
+  display: grid;
+  place-items: center;
+  background: #edf2e4;
+  flex-shrink: 0;
+}
+.pw-guide-route > div > svg {
+  margin-left: auto;
+  color: #b5c0a5;
+}
+.pw-guide-note {
+  font-size: 9px;
+  line-height: 1.9;
+  color: #a3ae96;
+  margin-top: 22px;
+  padding: 14px 8px 0;
+  border-top: 1px solid #e1e7d8;
+}
+.pw-desk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  background: radial-gradient(ellipse at 50% 45%, #e4e9df70, transparent 65%);
+  padding: 0 5px;
+}
+.pw-device-caption {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 6px;
+  color: #a1ac95;
+  letter-spacing: 1px;
+  margin: 2px 0 15px;
+}
+.pw-device-caption > span {
+  color: #7e9371;
+  font-size: 8px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.pw-device-caption i {
+  width: 3px;
+  height: 3px;
+  background: #b9c5ac;
+  border-radius: 50%;
+}
+.pw-device {
+  width: 100%;
+  background: #fff;
+  box-shadow:
+    0 14px 35px #4f694126,
+    0 0 0 1px #d8dfcf;
+  overflow: hidden;
+}
+.pw-device-phone {
+  max-width: 390px;
+  border: 7px solid #26352f;
+  border-radius: 33px;
+  box-shadow:
+    0 15px 35px #314b3630,
+    0 0 0 1px #62735d;
+}
+.pw-device-status {
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 16px 0;
+  background: #fff;
+  color: #24302e;
+  position: relative;
+}
+.pw-device-status b {
+  font-size: 11px;
+  font-weight: 700;
+}
+.pw-device-status > span:last-child {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.pw-device-camera {
+  position: absolute;
+  top: 4px;
+  left: calc(50% - 35px);
+  width: 70px;
+  height: 17px;
+  background: #25332f;
+  border-radius: 14px;
+}
+.pw-device-screen {
+  background: #fff;
+  max-height: min(580px, calc(100dvh - 280px));
+  overflow: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #d8ded7 transparent;
+  color: #243b36;
+  min-height: 350px;
+}
+.pw-device-procedure {
+  max-width: 650px;
+  border: 1px solid #d8e0ce;
+  border-radius: 11px;
+}
+.pw-procedure-chrome {
+  height: 34px;
+  border-bottom: 1px solid #e0e6d8;
+  background: #e9eee3;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 12px;
+  color: #8c9a80;
+}
+.pw-procedure-chrome > span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #c4d3b8;
+}
+.pw-procedure-chrome > span:nth-child(2) {
+  background: #d7d1b4;
+}
+.pw-procedure-chrome > span:nth-child(3) {
+  background: #b3c7be;
+}
+.pw-procedure-chrome b {
+  font-size: 9px;
+  font-weight: 500;
+  margin-left: 7px;
+}
+.pw-procedure-chrome small {
+  margin-left: auto;
+  font-size: 6px;
+  letter-spacing: 1px;
+}
+.pw-device-procedure .pw-device-screen {
+  max-height: min(600px, calc(100dvh - 280px));
+}
+.pw-home-indicator {
+  height: 16px;
+  background: #fff;
+  display: grid;
+  place-items: center;
+}
+.pw-home-indicator span {
+  width: 100px;
+  height: 4px;
+  border-radius: 4px;
+  background: #28312c;
+}
+.pw-rehearsal-note {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 9px;
+  color: #9aa78e;
+  line-height: 1.8;
+  margin: 16px 0 0;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .practice-layer {
+    padding-left: 208px;
+    padding-right: 24px;
+  }
+  .practice-workspace {
+    padding: 25px 24px 20px;
+  }
+  .pw-body {
+    grid-template-columns: 190px minmax(0, 1fr);
+    gap: 22px;
+  }
+  .pw-heading h2 {
+    font-size: 23px;
+  }
+  .pw-heading p {
+    font-size: 11px;
+  }
+  .pw-guide-hero {
+    width: 128px;
+    height: 128px;
+  }
+  .pw-guide-hero > .jungtoki-guide {
+    width: 134px;
+    height: 134px;
+  }
+  .pw-guide-bubble {
+    padding: 14px;
+    font-size: 11px;
+  }
+  .pw-guide-route {
+    padding: 0 3px;
+  }
+  .pw-device-status {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+  .pw-device-screen {
+    max-height: calc(100dvh - 270px);
+  }
+  .pw-device-procedure .pw-device-screen {
+    max-height: calc(100dvh - 270px);
+  }
+}
+@media (max-width: 1000px) {
+  .pw-body {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 17px;
+  }
+  .pw-guide {
+    display: grid;
+    grid-template-columns: 66px minmax(0, 1fr);
+    gap: 7px 14px;
+    align-items: center;
+    padding: 0;
+  }
+  .pw-guide-hero {
+    grid-column: 1;
+    grid-row: 1/3;
+    width: 66px;
+    height: 78px;
+    margin: 0;
+  }
+  .pw-guide-hero > .jungtoki-guide {
+    width: 78px;
+    height: 78px;
+    margin-left: -6px;
+  }
+  .pw-guide-spark {
+    font-size: 12px;
+    right: -4px;
+    top: 9px;
+  }
+  .pw-guide-name {
+    grid-column: 2;
+    grid-row: 1;
+    justify-content: flex-start;
+    margin: 0;
+    align-self: end;
+  }
+  .pw-guide-name b {
+    font-size: 11px;
+  }
+  .pw-guide-name > span {
+    font-size: 8px;
+    padding: 2px 4px;
+  }
+  .pw-guide-bubble {
+    grid-column: 2;
+    grid-row: 2;
+    min-height: 0;
+    padding: 9px 12px;
+    font-size: 10px;
+    align-self: start;
+    line-height: 1.8;
+  }
+  .pw-guide-bubble:before {
+    display: none;
+  }
+  .pw-guide-route,
+  .pw-guide-note {
+    display: none;
+  }
+  .pw-device-caption {
+    margin-bottom: 12px;
+  }
+  .pw-device-screen,
+  .pw-device-procedure .pw-device-screen {
+    max-height: calc(100dvh - 375px);
+  }
+  .pw-training-badge {
+    font-size: 8px;
+    padding: 5px 7px;
+  }
+  .pw-heading {
+    padding-bottom: 17px;
+  }
+  .pw-heading h2 {
+    font-size: 22px;
+  }
+  .pw-heading p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 760px) {
+  .practice-layer {
+    padding: 12px 12px 12px 82px;
+  }
+  .practice-dialog {
+    max-height: calc(100dvh - 24px);
+    border-radius: 12px;
+  }
+  .practice-workspace {
+    padding: 22px 13px 17px;
+  }
+  .practice-close {
+    right: 12px;
+    top: 12px;
+    width: 26px;
+    height: 26px;
+  }
+  .pw-heading {
+    padding-right: 24px;
+    align-items: flex-start;
+    gap: 5px;
+    padding-bottom: 13px;
+  }
+  .pw-eyebrow {
+    font-size: 5px;
+    letter-spacing: 1px;
+  }
+  .pw-heading h2 {
+    font-size: 18px;
+    margin: 7px 0;
+    line-height: 1.5;
+  }
+  .pw-heading p {
+    font-size: 9px;
+  }
+  .pw-training-badge {
+    display: none;
+  }
+  .pw-body {
+    padding-top: 13px;
+    gap: 13px;
+  }
+  .pw-guide {
+    grid-template-columns: 48px minmax(0, 1fr);
+    column-gap: 8px;
+    row-gap: 5px;
+  }
+  .pw-guide-hero {
+    width: 48px;
+    height: 65px;
+  }
+  .pw-guide-hero > .jungtoki-guide {
+    width: 63px;
+    height: 63px;
+    margin-left: -8px;
+  }
+  .pw-guide-name b {
+    font-size: 10px;
+  }
+  .pw-guide-name > span {
+    font-size: 7px;
+  }
+  .pw-guide-bubble {
+    font-size: 9px;
+    padding: 8px;
+    line-height: 1.75;
+  }
+  .pw-device-caption {
+    font-size: 5px;
+    gap: 5px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+  }
+  .pw-device-caption > span {
+    font-size: 6px;
+  }
+  .pw-device-phone {
+    border-width: 5px;
+    border-radius: 24px;
+  }
+  .pw-device-screen,
+  .pw-device-procedure .pw-device-screen {
+    max-height: calc(100dvh - 330px);
+    min-height: 320px;
+  }
+  .pw-device-status {
+    height: 27px;
+    padding: 4px 11px 0;
+  }
+  .pw-device-status b {
+    font-size: 9px;
+  }
+  .pw-device-status > span:last-child {
+    gap: 2px;
+  }
+  .pw-device-status > span:last-child svg {
+    width: 10px;
+  }
+  .pw-device-camera {
+    width: 52px;
+    height: 14px;
+    left: calc(50% - 26px);
+    top: 4px;
+  }
+  .pw-home-indicator {
+    height: 13px;
+  }
+  .pw-home-indicator span {
+    width: 75px;
+    height: 3px;
+  }
+  .pw-rehearsal-note {
+    font-size: 7px;
+    margin-top: 13px;
+    gap: 4px;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .pw-rehearsal-note svg {
+    width: 11px;
+    margin-top: 1px;
+  }
+  .pw-procedure-chrome {
+    padding: 0 8px;
+    height: 29px;
+  }
+  .pw-procedure-chrome b {
+    font-size: 7px;
+  }
+  .pw-procedure-chrome small {
+    font-size: 5px;
+  }
+  .pw-desk {
+    padding: 0;
+  }
+  .pw-device-procedure {
+    border-radius: 8px;
+  }
+}
+@media (max-width: 430px) {
+  .practice-layer {
+    padding: 8px;
+  }
+  .practice-dialog {
+    max-height: calc(100dvh - 16px);
+  }
+  .pw-device-screen,
+  .pw-device-procedure .pw-device-screen {
+    max-height: calc(100dvh - 310px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .practice-dialog * {
+    scroll-behavior: auto !important;
+  }
+}
+.pw-guide-bubble {
+  color: #5a7050;
+}
+.pw-heading p {
+  color: #7a8b70;
+}
+
+.practice-layer[hidden] {
+  display: none;
+}

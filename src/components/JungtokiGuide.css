@@ -1,0 +1,14 @@
+.jungtoki-guide {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  image-rendering: pixelated;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.jungtoki-guide-sprite image {
+  image-rendering: pixelated;
+  pointer-events: none;
+}
